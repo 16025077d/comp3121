@@ -2,10 +2,10 @@
 <script>
   access_token = "1218953151604084|e0b661a4fe8cf9e3b74ae408dd1ef3f2";
   page_id = "107101093800932";
-  
+</script>  
   <a href="https://graph.facebook.com/107101093800932/feed?fields=permalink_url&access_token=1218953151604084|e0b661a4fe8cf9e3b74ae408dd1ef3f2>FB</a>
 
-</script>
+
 
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvalerie.ho.146%2Fposts%2F107123183798723&width=500" width="500" height="479" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
