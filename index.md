@@ -1,10 +1,9 @@
 ## Welcome to GitHub Pages
 <script>
-  app_id = "1218953151604084";
-  app_secret = "e0b661a4fe8cf9e3b74ae408dd1ef3f2";
+  access_token = "1218953151604084|e0b661a4fe8cf9e3b74ae408dd1ef3f2";
   page_id = "107101093800932";
   
-  <a href="https://graph.facebook.com/"+{page_id}+"/feed?fields=permalink_url&access_token="+{app_id}+"|"+{app_secret}>FB</a>
+  <a href="https://graph.facebook.com/107101093800932/feed?fields=permalink_url&access_token=1218953151604084|e0b661a4fe8cf9e3b74ae408dd1ef3f2>FB</a>
 
 </script>
 
