@@ -4,7 +4,24 @@
   page_id = "107101093800932";
 </script>  
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1218953151604084',
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvalerie.ho.146%2Fposts%2F107123183798723&width=500" width="500" height="479" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
