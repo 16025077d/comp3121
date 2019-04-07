@@ -31,8 +31,8 @@
                 var post_id = post.id;
                 console.log(post_url);
                 console.log(post_id);
-                
-		document.getElementsById("facebook").innerHTML+="<div class=\"fb-post\" data-href=\"" + post_url + "\" data-width=\"500\"></div>";
+                var root_div = document.getElementsById("facebook"); 
+			root_div.innerHTML+="<div class=\"fb-post\" data-href=\"" + post_url + "\" data-width=\"500\"></div>";
               })
             }
           }
