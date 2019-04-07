@@ -19,18 +19,29 @@
   return t;
 }(document, "script", "twitter-wjs"));
 
-twttr.widgets.load(
-  document.getElementById("container")
-);
 
-twttr.widgets.createTimeline(
-  {
-    sourceType: "list",
-    ownerScreenName: "TwitterDev",
-    slug: "national-parks"
-  },
-  document.getElementById("container")
-);
+  var error = function (err, response, body) {
+    	console.log('ERROR [%s]', err);
+	};
+	var success = function (data) {
+    	console.log('Data [%s]', data);
+	};
+
+	var Twitter = require('twitter-node-client').Twitter;
+
+	
+	{
+    	"consumerKey": "WICYB6RNG5stAz7dlEENUf1gf",
+    	"consumerSecret": "qpvt2Tig5IGAudhCf54EeFwggiYDbcFaqnFcWUF87rMnvNfPBe",
+    	"accessToken": "1111925825455046656-GBxL9gHRNdA1zkCygZf5Dvq4v9pPce",
+    	"accessTokenSecret": "ppi9pf862GKxnRxutn0Mt6iQMD8OZKmdCU2kEaHh6nLP3",
+    	"callBackUrl": ""
+	}
+
+	
+    var twitter = new Twitter();
+  
+ 
 
 </script>
 <container></container>
