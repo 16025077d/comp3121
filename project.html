@@ -4,13 +4,22 @@
 <h1>16025077d</h1>
 
 <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1218953151604084',
-          xfbml      : true,
-          version    : 'v3.2'
-        });
-        FB.AppEvents.logPageView();
+        window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1218953151604084',
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
         
 	var page_id = '107101093800932';
 	var access_token = '1218953151604084|PvyQ_6YjMa7L3vIiOpxgbHA-I0w';
@@ -37,13 +46,7 @@
           }
         );
       };
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      
     </script>
 	<div id="facebook"></div>
 	</body>
