@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="has-lab-nav-bottom lab-theme-light">
+<head>
+    <title>Flickr API in jQuery & JavaScript</title>
+    <link rel="icon" type="image/png" href="files/images/social_flickr_box.png" />
+    <meta charset="utf-8" />
+
+	<link rel="stylesheet" href="files/css/labs.css">
+	<link rel="stylesheet" href="files/css/masonry.css">
+</head>
+<body class="labs-template-default single single-labs postid-2409 logged-in admin-bar no-customize-support">
+	<div class="wrapper">
+    <h1>Flickr API in jQuery & JavaScript</h1>
+    <h2>
+    <input id="search" type="text" placeholder="search text" />
+    <button id="submit" onclick="JavaScriptFetch()">Submit</button>
+	<button id="reset">Reset</button>
+	</h2>
+        <div class="container" id="content">
+            <div class="masonry bordered" id="outputDiv"></div>
+        </div>
+    
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        
+        function JavaScriptFetch() {
+            var script = document.createElement('script');
+            script.src = "https://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=" + document.getElementById("search").value;;
+            document.querySelector('head').appendChild(script);
+        }
+
+        function jsonFlickrFeed(data) {
+            var image = "";
+            data.items.forEach(function (element) {
+                image += "<div class=\"brick\">"+element.description+"</div>";
+            });
+
+            document.getElementById("outputDiv").innerHTML = image;
+        }
+        
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#reset").click(function (e) {
+                location.reload();
+            });
+
+            $("#submit").click(function (e) {
+                $("#outputDiv").html("");
+
+            
+            });
+        });
+    </script>
+</body>
+</html>
